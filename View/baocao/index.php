@@ -57,7 +57,7 @@ include 'View/layout/menu.php';
 											</div>
 											<div class="form-group">
 												<label>Địa điểm</label>
-												<input type="radio"  name="diadiem" value="Trong nước" required/>Trong nước
+												<input type="radio"  name="diadiem" value="Trong nước" checked required/>Trong nước
 												<input type="radio"  name="diadiem" value="Nước ngoài" required/>Nước ngoài
 											</div>
 											<div class="form-group">
@@ -222,7 +222,7 @@ include 'View/layout/menu.php';
 											</div>
 										</div>
 									</div>
-									<td class="text-center"><a href="?m=baocao&a=xoabaocao&i=<?php echo $item['id'];?>" ><i class="glyphicon glyphicon-trash"></i></a></td>
+									<td class="text-center"><a id="link-del" href="javascript:delete_id(<?php echo $item['id']; ?>)"><i class="glyphicon glyphicon-trash"></i></a></td>
 								</tr>
 								<?php
 							}
@@ -235,6 +235,15 @@ include 'View/layout/menu.php';
 	</div>
 </div>
 </div>
+<script type="text/javascript">
+	function delete_id(id)
+	{
+	     if(confirm('Bạn có chắc chán muốn xóa bản ghi này ?'))
+	     {
+	        window.location.href='?m=baocao&a=xoabaocao&i='+id;
+	     }
+	}
+</script>
 <?php
 include 'View/layout/footter.php';
 ?>
