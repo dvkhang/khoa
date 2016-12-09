@@ -6,9 +6,22 @@ include 'View/layout/menu.php';
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>Danh sach Can Bo</h2>
+				<h2>Danh sách bài báo</h2>
 				<div >
-					<button type="button" class="btn btn-success" id="themmoi" data-toggle="modal" data-target=".bs-example-modal-sm" > Thêm Bài </button>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="modal-header">
+							<button type="button" class="btn btn-success" id="themmoi" data-toggle="modal" data-target=".bs-example-modal-sm" > Thêm Bài </button>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<form action="">
+							<input type="text" name="" value="" placeholder="">
+							<button>Search</button>
+						</form>
+					</div>
+				</div>
+					
 				</div>
 				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
@@ -16,6 +29,8 @@ include 'View/layout/menu.php';
 							<div class="modal-header">
 								<h4 class="modal-title">Thêm Bài</h4>
 							</div>
+					
+							
 							<div class="modal-body">
 								<form action="?m=baocao&a=thembaocao" method="POST">
 									<div class="row">
