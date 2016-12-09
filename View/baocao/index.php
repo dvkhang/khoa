@@ -8,13 +8,13 @@ include 'View/layout/menu.php';
 			<div class="col-lg-12">
 				<h2>Danh sach Can Bo</h2>
 				<div >
-					<button type="button" class="btn btn-success" id="themmoi" data-toggle="modal" data-target=".bs-example-modal-sm" > Them </button>
+					<button type="button" class="btn btn-success" id="themmoi" data-toggle="modal" data-target=".bs-example-modal-sm" > Thêm Bài </button>
 				</div>
 				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">Them Bao Cao</h4>
+								<h4 class="modal-title">Thêm Bài</h4>
 							</div>
 							<div class="modal-body">
 								<form action="?m=baocao&a=thembaocao" method="POST">
@@ -22,38 +22,38 @@ include 'View/layout/menu.php';
 										<div class="col-sm-6">
 											<div class="form-group">
 												<label>Tên bài báo</label>
-												<input type="text" class="form-control" name="tenbaibao" required/>
+												<input type="text" class="form-control" name="tenbaibao" placeholder="Ứng dụng cntt trong giảng dạy" required/>
 											</div>
 											<div class="form-group">
 												<label>Tên tạp chí</label>
-												<input type="text" class="form-control" name="tentapchi" required/>
+												<input type="text" class="form-control" name="tentapchi" placeholder="Tạp chí công nghệ" required/>
 											</div>
 											<div class="form-group">
 												<label>Tạp chí số</label>
-												<input type="number" class="form-control" name="tapchiso" required/>
+												<input type="number" class="form-control" name="tapchiso" placeholder="Số đặc biệt" required/>
 											</div>
 											<div class="form-group">
 												<label>Trang đăng</label>
-												<input type="number" class="form-control" name="trangdang" required/>
+												<input type="number" class="form-control" name="trangdang" placeholder="1" required/>
 											</div>
 											<div class="form-group">
 												<label>Tập</label>
-												<input type="number" class="form-control" name="tap" required/>
+												<input type="number" class="form-control" name="tap" placeholder="3" required/>
 											</div>
 											
 										</div>
 										<div class="col-sm-6">
 											<div class="form-group">
 												<label>Địa chỉ</label>
-												<input type="text" class="form-control" name="diachi" required/>
+												<input type="text" class="form-control" name="diachi" placeholder="Thái nguyên" required/>
 											</div>
 											<div class="form-group">
 												<label>Năm</label>
-												<input type="number" class="form-control" name="nam" required/>
+												<input type="number" class="form-control" name="nam" placeholder="2016" required/>
 											</div>
 											<div class="form-group">
 												<label>Phân loai</label>
-												<input type="text" class="form-control" name="theloai" required/>
+												<input type="text" class="form-control" name="theloai" placeholder="Khoa Học Công nghệ" required/>
 											</div>
 											<div class="form-group">
 												<label>Địa điểm</label>
@@ -62,7 +62,7 @@ include 'View/layout/menu.php';
 											</div>
 											<div class="form-group">
 												<label>Danh sách tác giả</label>
-												<input type="text" class="form-control" name="danhsachtacgia" required/>
+												<input type="text" class="form-control" name="danhsachtacgia" placeholder="TS.Phạm Việt Bình" required/>
 											</div>
 											<div class="form-group">
 												<label>Là tác giả TNU đầu tiên</label>
@@ -72,7 +72,7 @@ include 'View/layout/menu.php';
 									</div>
 									
 
-									<button type="submit" class="btn btn-success " name="themcb">Them</button>
+									<button type="submit" class="btn btn-success " name="themcb">Thêm Bài</button>
 								</form>
 							</div>
 						</div>
@@ -215,7 +215,7 @@ include 'View/layout/menu.php';
 																		</div>
 																	</div>
 																</div>
-														<button type="submit" class="btn btn-success " name="suabaocao">Sửa</button>
+														<button type="submit" class="btn btn-success " name="suabaocao">Sửa Bài</button>
 													</form>
 												</div>
 
